@@ -1,58 +1,116 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    transition: 1s;
 }
-.wrapper{
-    width: 80%;
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(178, 201, 177);
+}
+
+.wrapper {
+    width: 80vw;
     margin: 5% auto;
+
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 1%;
+    
+
+}
+
+.slides {
     overflow: hidden;
+    height: 40vw;
+    border-radius: 1%;
+
 }
 
-
-/* .slide{
-    display: ;
-} */
-
-p{
-    display: block;
-}
-
-
-.slides{
-    width: 500%;
+.slider-wrapper {
+    /* margin-top: 5vh; */
     display: flex;
-    position:relative;
+    flex-wrap: wrap;
 }
 
-img{
+input{
+     display:none;
+}
+
+
+img {
+
     width: 100%;
-    margin-bottom: 15px;
-}
-.slider{
-    position:relative;
-    width: 100%;
-   
-}
-
-.navigation{
-    position:absolute;
-     right: 2px;
-    bottom: 3px ; 
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-
-.navi{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    opacity: 0.5;
-    border: 1px solid;
-    border-color: rgb(87, 87, 250);
+    height: 100%;
     
 }
-input{
-    display:none;
+
+.navi:checked~img {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 1.3vw;
+
+}
+
+.navi {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    opacity: 0.7;
+    border: 0.1rem solid;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+
+
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#rad_1:checked~.pagination .navigation .navi1 {
+    background-color: green;
+}
+
+#rad_2:checked~.pagination .navigation .navi2 {
+    background-color: green;
+}
+#rad_3:checked~.pagination .navigation .navi3 {
+    background-color: green;
+}
+#rad_4:checked~.pagination .navigation .navi4 {
+    background-color: green;
+}
+#rad_5:checked~.pagination .navigation .navi5 {
+    background-color: green;
+}
+
+
+#rad_2:checked~.slides .slider-wrapper {
+    margin-top: -49vw;
+}
+
+#rad_3:checked~.slides .slider-wrapper {
+    margin-top: -93vw;
+}
+#rad_4:checked~.slides .slider-wrapper {
+    margin-top: -140vw;
+}
+#rad_5:checked~.slides .slider-wrapper {
+    margin-top: -186vw;
 }
