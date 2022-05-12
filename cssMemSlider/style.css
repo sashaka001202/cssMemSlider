@@ -13,6 +13,7 @@ body {
 }
 
 .wrapper {
+    max-width: 1200px;
     width: 80vw;
     margin: 5% auto;
 
