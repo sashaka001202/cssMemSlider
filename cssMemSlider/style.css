@@ -35,7 +35,6 @@ body {
 }
 
 .slider-wrapper {
-    /* margin-top: 5vh; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,20 +75,7 @@ img {
     border: 1px solid black;
     border-radius: 50%;
     opacity: 0.2;
-    /* background-color: green; */
     transition: 0.5s;
-    /* display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    opacity: 0.2;
-    border: 0.1rem solid;
-    border-color: rgb(0, 0, 0);
-    background-color: red;
-    cursor: pointer;
-
-z-index: 10;
-padding: 1em;  */
 }
 
 
@@ -183,8 +169,6 @@ padding: 1em;  */
         display: flex;
         align-items: flex-start;
         flex-direction: column-reverse;
-
-
     }
 
     .navigation {
