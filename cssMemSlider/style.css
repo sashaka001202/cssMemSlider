@@ -83,6 +83,18 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+.description{
+    height: 8vh;
+}
+
+.description-wrapper{
+    margin-top: 3vh;
+    overflow: hidden;
+    height: 2.5vh;
+}
+
+
 #rad_1:checked~.pagination .navigation .navi1 {
     background-color: green;
 }
@@ -100,6 +112,20 @@ img {
     background-color: green;
 }
 
+
+#rad_2:checked~.pagination .description .description-wrapper .descriptions  {
+    margin-top: -2.5vh;
+}
+
+#rad_3:checked~.pagination .description .description-wrapper .descriptions  {
+    margin-top: -5vh;
+}
+#rad_4:checked~.pagination .description .description-wrapper .descriptions  {
+    margin-top: -7.5vh;
+}
+#rad_5:checked~.pagination .description .description-wrapper .descriptions  {
+    margin-top: -10vh;
+}
 
 #rad_2:checked~.slides .slider-wrapper {
     margin-top: -49vw;
