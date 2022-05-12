@@ -65,15 +65,33 @@ img {
 }
 
 .navi {
+    padding: 1.3vw;
+     cursor: pointer;
+
+
+}
+
+.navi-single {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 0.2;
+    /* background-color: green; */
+    transition: 0.5s;
+    /* display: inline-block;
     width: 1rem;
     height: 1rem;
     border-radius: 100%;
-    opacity: 0.7;
+    opacity: 0.2;
     border: 0.1rem solid;
     border-color: rgb(0, 0, 0);
+    background-color: red;
     cursor: pointer;
 
-
+z-index: 10;
+padding: 1em;  */
 }
 
 
@@ -82,53 +100,65 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .description{
-    height: 8vh;
+    height: 8vw;
+    min-width: 20%;
 }
 
 .description-wrapper{
-    margin-top: 3vh;
+    margin-top: 3vw;
     overflow: hidden;
-    height: 2.5vh;
+    height: 1.1rem;
 }
 
 
-#rad_1:checked~.pagination .navigation .navi1 {
+#rad_1:checked~.pagination .navigation .navi .navi_1 {
     background-color: green;
+    opacity: 0.8;
+    border:1px solid  green;
 }
 
-#rad_2:checked~.pagination .navigation .navi2 {
+#rad_2:checked~.pagination .navigation .navi .navi_2 {
     background-color: green;
+    opacity: 0.8;
+    border:1px solid  green;
 }
-#rad_3:checked~.pagination .navigation .navi3 {
+#rad_3:checked~.pagination .navigation .navi .navi_3 {
     background-color: green;
+    opacity: 0.8;
+    border:1px solid  green;
 }
-#rad_4:checked~.pagination .navigation .navi4 {
+#rad_4:checked~.pagination .navigation .navi .navi_4 {
     background-color: green;
+    opacity: 0.8;
+    border:1px solid  green;
 }
-#rad_5:checked~.pagination .navigation .navi5 {
+#rad_5:checked~.pagination .navigation .navi .navi_5 {
     background-color: green;
+    opacity: 0.8;
+    border:1px solid  green;
 }
 
 
 #rad_2:checked~.pagination .description .description-wrapper .descriptions  {
-    margin-top: -2.5vh;
+    margin-top: -1.1rem;
 }
 
 #rad_3:checked~.pagination .description .description-wrapper .descriptions  {
-    margin-top: -5vh;
+    margin-top: -2.2rem;
 }
 #rad_4:checked~.pagination .description .description-wrapper .descriptions  {
-    margin-top: -7.5vh;
+    margin-top: -3.4rem;
 }
 #rad_5:checked~.pagination .description .description-wrapper .descriptions  {
-    margin-top: -10vh;
+    margin-top: -4.6rem;
 }
 
 #rad_2:checked~.slides .slider-wrapper {
-    margin-top: -49vw;
+    margin-top: -5.8rem;
 }
 
 #rad_3:checked~.slides .slider-wrapper {
@@ -139,4 +169,21 @@ img {
 }
 #rad_5:checked~.slides .slider-wrapper {
     margin-top: -186vw;
+}
+
+
+@media (max-width: 499px) {
+
+    .pagination {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        
+    
+}
+.navigation{
+    margin: 2vw auto  0 auto;
+}
+
+
 }
