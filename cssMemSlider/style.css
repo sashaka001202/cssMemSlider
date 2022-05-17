@@ -72,6 +72,10 @@ img {
 background-color: green;
 }
 
+.navi:active>.navi-single{
+    background-color: red;
+    }
+
 .navi-single {
     display: block;
     width: 1rem;
