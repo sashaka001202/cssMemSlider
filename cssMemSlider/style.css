@@ -68,6 +68,14 @@ img {
 
 }
 
+.navi:hover>.navi-single{
+background-color: green;
+}
+
+.navi:active>.navi-single{
+    background-color: red;
+    }
+
 .navi-single {
     display: block;
     width: 1rem;
@@ -147,7 +155,7 @@ img {
 }
 
 #rad_2:checked~.slides .slider-wrapper {
-    margin-top: -5.8rem;
+    margin-top: -50vw;
 }
 
 #rad_3:checked~.slides .slider-wrapper {
